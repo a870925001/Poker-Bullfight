@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鬥牛點數判斷器</title>
+</head>
+<body>
+    <h2>鬥牛點數判斷器</h2>
+    <button onclick="generateRandomCards()">生成隨機五張牌</button>
+    <div id="cardInput">
+        <label>選擇牌：</label>
+        <button onclick="addCard('A')">A</button>
+        <button onclick="addCard('2')">2</button>
+        <button onclick="addCard('3')">3</button>
+        <button onclick="addCard('4')">4</button>
+        <button onclick="addCard('5')">5</button>
+        <button onclick="addCard('6')">6</button>
+        <button onclick="addCard('7')">7</button>
+        <button onclick="addCard('8')">8</button>
+        <button onclick="addCard('9')">9</button>
+        <button onclick="addCard('10')">10</button>
+        <button onclick="addCard('J')">J</button>
+        <button onclick="addCard('Q')">Q</button>
+        <button onclick="addCard('K')">K</button>
+    </div>
+    <div>
+        <label>已選擇牌：</label>
+        <span id="selectedCards"></span>
+    </div>
+    <button onclick="clearCards()">清除</button>
+    <button onclick="calculateBull()">判斷結果</button>
+    <h3 id="result"></h3>
+
+    <script src="bulls.js"></script>
+</body>
+</html>
